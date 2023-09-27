@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --text-50: #eae9fc;
+    --text-100: #d4d2f9;
+    --text-200: #a9a5f3;
+    --text-300: #7e78ed;
+    --text-400: #534be7;
+    --text-500: #281fe0;
+    --text-600: #2018b4;
+    --text-700: #181287;
+    --text-800: #100c5a;
+    --text-900: #08062d;
+    --text-950: #040316;
+    
+    --background-50: #fdf3e7;
+    --background-100: #fbe8d0;
+    --background-200: #f7d0a1;
+    --background-300: #f4b971;
+    --background-400: #f0a242;
+    --background-500: #ec8a13;
+    --background-600: #bd6f0f;
+    --background-700: #8e530b;
+    --background-800: #5e3708;
+    --background-900: #2f1c04;
+    --background-950: #180e02;
+    
+    --primary-50: #e9ebfb;
+    --primary-100: #d3d6f8;
+    --primary-200: #a8aef0;
+    --primary-300: #7c85e9;
+    --primary-400: #515de1;
+    --primary-500: #2534da;
+    --primary-600: #1e2aae;
+    --primary-700: #161f83;
+    --primary-800: #0f1557;
+    --primary-900: #070a2c;
+    --primary-950: #040516;
+    
+    --secondary-50: #e7f4fd;
+    --secondary-100: #cfe9fc;
+    --secondary-200: #9fd3f9;
+    --secondary-300: #6fbef6;
+    --secondary-400: #3fa8f3;
+    --secondary-500: #0f92f0;
+    --secondary-600: #0c75c0;
+    --secondary-700: #095890;
+    --secondary-800: #063a60;
+    --secondary-900: #031d30;
+    --secondary-950: #020f18;
+    
+    --accent-50: #f2f2f2;
+    --accent-100: #e6e6e6;
+    --accent-200: #cccccc;
+    --accent-300: #b3b3b3;
+    --accent-400: #999999;
+    --accent-500: #808080;
+    --accent-600: #666666;
+    --accent-700: #4d4d4d;
+    --accent-800: #333333;
+    --accent-900: #1a1a1a;
+    --accent-950: #0d0d0d;
+    
+  }
+
+  .dark {
+    --text-50: #eae9fc;
+    --text-100: #d4d2f9;
+    --text-200: #a9a5f3;
+    --text-300: #7e78ed;
+    --text-400: #534be7;
+    --text-500: #281fe0;
+    --text-600: #2018b4;
+    --text-700: #181287;
+    --text-800: #100c5a;
+    --text-900: #08062d;
+    --text-950: #040316;
+    
+    --background-50: #fdf3e7;
+    --background-100: #fce7cf;
+    --background-200: #f8cfa0;
+    --background-300: #f5b770;
+    --background-400: #f29f40;
+    --background-500: #ee8711;
+    --background-600: #bf6c0d;
+    --background-700: #8f510a;
+    --background-800: #5f3607;
+    --background-900: #301b03;
+    --background-950: #180d02;
+    
+    --primary-50: #e9ebfb;
+    --primary-100: #d3d6f8;
+    --primary-200: #a8aef0;
+    --primary-300: #7c85e9;
+    --primary-400: #515de1;
+    --primary-500: #2534da;
+    --primary-600: #1e2aae;
+    --primary-700: #161f83;
+    --primary-800: #0f1557;
+    --primary-900: #070a2c;
+    --primary-950: #040516;
+    
+    --secondary-50: #e7f4fd;
+    --secondary-100: #cfe9fc;
+    --secondary-200: #9fd3f9;
+    --secondary-300: #6fbef6;
+    --secondary-400: #3fa8f3;
+    --secondary-500: #0f92f0;
+    --secondary-600: #0c75c0;
+    --secondary-700: #095890;
+    --secondary-800: #063a60;
+    --secondary-900: #031d30;
+    --secondary-950: #020f18;
+    
+    --accent-50: #f2f2f2;
+    --accent-100: #e6e6e6;
+    --accent-200: #cccccc;
+    --accent-300: #b3b3b3;
+    --accent-400: #999999;
+    --accent-500: #808080;
+    --accent-600: #666666;
+    --accent-700: #4d4d4d;
+    --accent-800: #333333;
+    --accent-900: #1a1a1a;
+    --accent-950: #0d0d0d;
+    
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --light-background-rgb: 254, 249, 243; /* #fef9f3 */
+  --dark-background-rgb: 7, 27, 54; /* #071b36 */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* Use the light background color by default */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--light-background-rgb));
+}
+
+.container.light {
+  /* Use the light background color */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--light-background-rgb));
+}
+
+.container.dark {
+  /* Use the dark background color */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--dark-background-rgb));
+}
+
+h1 { 
+  font-family: var(--font-drukwidebold);
+ }
+
+.rectangle-button {
+  background-color: #262626;
+  color: transparent; /* Set the text to transparent by default */
+  height: 15vh;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Create a relative positioning context for the children */
+  font-family: var(--font-drukwidebold);
+  /* Transition for smooth hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rectangle-button:hover {
+  background-color: #333; /* Change the background color on hover */
+}
+
+.rectangle-button:hover .button-text {
+  color: white; /* Make the text visible on hover */
+}
+
+.button-text {
+  position: absolute; /* Position the text absolutely within the button */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+::selection {
+  background: #00FF97;
+}
