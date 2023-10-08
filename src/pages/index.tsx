@@ -26,7 +26,6 @@ export default function Home() {
             <RectangleButton onClick={() => console.log("hello")}>
               playground
             </RectangleButton>
-
           </div>
 
           <div>
