@@ -15,11 +15,11 @@ export function ModeToggle() {
     };
 
     return (
-        <Button size="icon" onClick={toggleTheme}>
+        <Button size="iconxs" onClick={toggleTheme}>
             {theme === 'dark' ? (
-                <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+                <Sun className="h-[1.8rem] w-[1.8rem] rotate-0 scale-100 transition-all" />
             ) : (
-                <Moon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
+                <Moon className="h-[1.8rem] w-[1.8rem] rotate-0 scale-100 transition-all" />
             )}
             <span className="sr-only">Toggle theme</span>
         </Button>

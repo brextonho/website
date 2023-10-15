@@ -2,6 +2,10 @@ import '@/styles/globals.css';
 import Head from 'next/head';
 import { ThemeProvider } from "@/app/components/theme-provider";
 import { poppins, drukwidebold, ltunivers } from './fonts';
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
 
 export default function RootLayout({
   children,
