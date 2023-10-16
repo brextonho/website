@@ -210,43 +210,25 @@
   --dark-background-rgb: 7, 27, 54; /* #071b36 */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  /* Use the light background color by default */
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--light-background-rgb));
-}
-
-.container.light {
-  /* Use the light background color */
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--light-background-rgb));
-}
-
-.container.dark {
-  /* Use the dark background color */
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--dark-background-rgb));
-}
-
 h1 { 
   font-family: var(--font-drukwidebold);
  }
 
 .rectangle-button {
   background-color: #262626;
+  color: transparent; /* Set the text to transparent by default */
+  height: 15vh;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  position: relative; /* Create a relative positioning context for the children */
+  font-family: var(--font-drukwidebold);
+  /* Transition for smooth hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rectangle-button.dark {
+  background-color: #2518e4;
   color: transparent; /* Set the text to transparent by default */
   height: 15vh;
   width: 100%;

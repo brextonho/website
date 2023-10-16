@@ -15,7 +15,7 @@ export function ModeToggle() {
     };
 
     return (
-        <Button size="iconxs" onClick={toggleTheme}>
+        <Button className='hover:opacity-75' size="iconxs" onClick={toggleTheme}>
             {theme === 'dark' ? (
                 <Sun className="h-[1.8rem] w-[1.8rem] rotate-0 scale-100 transition-all" />
             ) : (
