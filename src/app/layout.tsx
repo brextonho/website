@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
 
     return (
-      <div className={`${poppins.variable} ${ltunivers.variable} ${drukwidebold.variable}`}>
+      <div className={`${poppins.variable} ${ltunivers.variable} ${drukwidebold.variable} bg-background-100 dark:bg-background-950`}>
         <Head>
           <title>BREXTONHO</title>
           <meta name='description' content='the future' />

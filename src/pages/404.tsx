@@ -13,7 +13,7 @@ export default function Custom404() {
   }, [show])
   return (
     <div className="container mx-auto max-w-7xl">
-      <div className="absolute overflow-hidden flex flex-col items-center py-16 md:flex-row md:py-36 md:relative w-full">
+      <div className="absolute overflow-hidden flex flex-col items-center h-screen py-8 md:flex-row md:py-36 md:relative w-full">
 
         <div className="px-7 mt-8 md:px-12 lg:px-16 lg:m-0">
           <h3 className="text-secondary-text font-bold dark:text-gray-100 p-4 text-3xl md:text-4xl lg:text-5xl">Coming soon!</h3>
