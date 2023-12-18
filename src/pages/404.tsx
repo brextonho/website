@@ -3,6 +3,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { NavMenu } from '../app/components/NavBar';
 
 export default function Custom404() {
   const [show, setShow] = useState(true)
@@ -12,14 +13,15 @@ export default function Custom404() {
     }, 6000)
   }, [show])
   return (
-    <div className="container mx-auto max-w-7xl">
-      <div className="absolute overflow-hidden flex flex-col items-center h-screen py-8 md:flex-row md:py-36 md:relative w-full">
+    <div className="container mx-auto max-w-7xl h-screen w-full overflow-hidden">
+      <NavMenu />
+      <div className="flex flex-col items-center justify-center h-screen w-full">
 
-        <div className="px-7 mt-8 md:px-12 lg:px-16 lg:m-0">
-          <h3 className="text-secondary-text font-bold dark:text-gray-100 p-4 text-3xl md:text-4xl lg:text-5xl">Coming soon!</h3>
+        <div className="flex flex-col items-center px-7 mt-8 pb-16 md:px-12 lg:px-16 lg:m-0">
+          <h3 className="font-bold dark:text-neutral-200 text-3xl md:text-4xl lg:text-5xl">coming soon</h3>
           <br></br>
-          <Link href="/" className="bg-secondary-text text-primary-base p-4 dark:text-gray-100 rounded-xl font-medium text-xl hover:bg-transparent hover:text-secondary-text hover:ring-4 hover:ring-secondary-text hover:ring-inset duration-500">
-            Back to homepage
+          <Link href="/" className="p-6 dark:text-neutral-200 rounded-xl text-xl hover:ring-4 hover:ring-secondary-text hover:ring-inset duration-500">
+            back to homepage
           </Link>
         </div>
       </div>

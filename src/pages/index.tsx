@@ -12,21 +12,29 @@ export default function Home() {
     <div className="">
       <div className="flex flex-col justify-center h-screen mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-56">
           <div className="flex flex-col space-y-5 items-center">
-            <RectangleButton onClick={() => {window.location.href = '/about'}}>
-              about
-            </RectangleButton>
+            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/about">
+                <RectangleButton>
+                  about
+                </RectangleButton>
+            </Link>
 
-            <RectangleButton onClick={() => {window.location.href = '/projects'}}>
-              projects
-            </RectangleButton>
+            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/projects">
+                <RectangleButton>
+                  projects
+                </RectangleButton>
+            </Link>
 
-            <RectangleButton onClick={() => {window.location.href = '/experiences'}}>
-              experiences
-            </RectangleButton>
+            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/experiences">
+                <RectangleButton>
+                  experiences
+                </RectangleButton>
+            </Link>
 
-            <RectangleButton onClick={() => {window.location.href = '/playground'}}>
-              playground
-            </RectangleButton>
+            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/playground">
+                <RectangleButton>
+                  playground
+                </RectangleButton>
+            </Link>
           </div>
 
           <div className="sm:flex flex-row justify-between items-end">

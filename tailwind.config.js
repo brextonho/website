@@ -44,6 +44,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-poppins)'],
+        drukwide: ['var(--font-drukwidebold)', 'sans-serif'],
       },
       height: {
         'sm-vh': '12vh', // 12% of the viewport height for 'sm'
