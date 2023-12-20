@@ -18,6 +18,7 @@ export default function RootLayout({
         <Head>
           <title>BREXTONHO</title>
           <meta name='description' content='the future' />
+          <link rel="icon" href="./favicon.ico"></link>
         </Head>
 
         <Provider>

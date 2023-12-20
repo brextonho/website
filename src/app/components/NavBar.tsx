@@ -15,6 +15,7 @@ import {
 
 const menuItems = [
   { href: "/", title: "home" },
+  { href: "/about", title: "about" },
   { href: "/projects", title: "projects" },
   { href: "/experiences", title: "experiences" },
   { href: "/playground", title: "playground" },
