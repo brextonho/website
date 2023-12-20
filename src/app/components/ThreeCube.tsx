@@ -1,10 +1,11 @@
-// src/app/components/ThreeCube.tsx
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const ThreeCube: React.FC = () => {
   const meshRef = useRef<THREE.Mesh>(null);
+  const [hovered, setHovered] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   useFrame(() => {
     if (meshRef.current) {
@@ -14,9 +15,9 @@ const ThreeCube: React.FC = () => {
   });
 
   return (
-    <mesh ref={meshRef}>
+    <mesh ref={meshRef} onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)}>
       <boxGeometry args={[2.5, 2.5, 2.5]} />
-      <meshStandardMaterial color={'cyan'} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : 'cyan'} />
     </mesh>
   );
 };

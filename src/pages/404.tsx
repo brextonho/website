@@ -6,12 +6,12 @@ import React, { useState, useEffect } from "react";
 import { NavMenu } from '../app/components/NavBar';
 
 export default function Custom404() {
-  const [show, setShow] = useState(true)
-  useEffect(() => {
-    setInterval(() => {
-      setShow(!show)
-    }, 6000)
-  }, [show])
+  // const [show, setShow] = useState(true)
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setShow(!show)
+  //   }, 6000)
+  // }, [show])
   return (
     <div className="container mx-auto max-w-7xl h-screen w-full overflow-hidden">
       <NavMenu />
