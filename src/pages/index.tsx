@@ -24,9 +24,9 @@ export default function Home() {
                 </RectangleButton>
             </Link>
 
-            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/experiences">
+            <Link className="rectangle-button h-sm-vh xl:h-xl-vh" href="/experience">
                 <RectangleButton>
-                  experiences
+                  experience
                 </RectangleButton>
             </Link>
 

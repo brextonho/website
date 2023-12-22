@@ -49,7 +49,21 @@ module.exports = {
       height: {
         'sm-vh': '12vh', // 12% of the viewport height for 'sm'
         'xl-vh': '15vh', // 15% of the viewport height for 'xl'
-      }
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
