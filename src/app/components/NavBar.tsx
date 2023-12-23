@@ -29,7 +29,7 @@ export function NavMenu() {
           {menuItems.map((item) => (
             <NavigationMenuItem key={item.href}>
               <Link href={item.href} legacyBehavior passHref>
-                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} px-3 md:px-6 py-2`}>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} hover:text-neutral-600 dark:hover:text-neutral-400 px-3 md:px-6 py-2`}>
                   {item.title}
                 </NavigationMenuLink>
               </Link>
