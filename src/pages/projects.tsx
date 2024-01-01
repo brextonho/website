@@ -2,7 +2,8 @@ import React from 'react';
 import { NavMenu } from '../app/components/NavBar';
 import ProjectCard from '../app/components/ProjectCard';
 import EconFoodPic from 'public/images/econfood.png'
-import LibappPic from 'public/images/books.jpg'
+import LibappPic from 'public/images/books.png'
+import BacktestPic from 'public/images/backtest.png'
 
 
 const Projects: React.FC = () => {
@@ -17,6 +18,15 @@ const Projects: React.FC = () => {
             title="Econfood"
             description="Marketplace web app to tackle food waste problem by connecting food vendors and customers"
             tags={['Vue.js','Javascript','Firebase']}
+            githublink="https://github.com/brextonho/bt3103"
+            projectlink="https://econfood-9aa79.web.app/"
+        />
+        <ProjectCard
+            imgSource={BacktestPic}
+            altTitle="pythonbacktest"
+            title="Portfolio Backtesting"
+            description="Class-based backtesting system to simplify testing and reporting of various strategies and indicators"
+            tags={['Python', 'pandas']}
         />
         <ProjectCard
             imgSource={LibappPic}
@@ -25,8 +35,8 @@ const Projects: React.FC = () => {
             description="Python app to simulate library database, with CRUD functions for memberships,
             search, borrow and return books, and pay fines"
             tags={['Python', 'Tkinter', 'MySQL']}
+            githublink="https://github.com/brextonho/lib-app"
         />
-        {/* https://econfood-9aa79.web.app/ */}
       </div>
       
     </div>
