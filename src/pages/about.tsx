@@ -16,7 +16,7 @@ const About: React.FC = () => {
             </p>
 
             <p className='text-lg lg:text-2xl mb-6'>
-              Currently exploring fields in data science, web development and UI/UX design
+              Currently exploring fields in data science, web development and product design
               <br></br>
               Aspiring to create better experiences through tech
             </p>
