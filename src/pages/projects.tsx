@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
             title="Econfood"
             description="Marketplace web app to tackle food waste problem by connecting food vendors and customers"
             tags={['Vue.js','Javascript','Firebase']}
-            githublink="https://github.com/brextonho/bt3103"
+            githublink="https://github.com/BT3103AppDev1/l2-final-project-group-4-1"
             projectlink="https://econfood-9aa79.web.app/"
         />
         <ProjectCard
