@@ -41,14 +41,14 @@ const ProjectCard: React.FC<CardProps> = ({ imgSource, altTitle, title, descript
       ))}
     </div>
     
-    <div className="flex gap-3 md:gap-5 lg:gap-7 px-8 pb-4 text-neutral-800 dark:text-neutral-200">
+    <div className="flex gap-2 px-4 pb-4 text-neutral-800 dark:text-neutral-200">
       {githublink && (
-        <Link href={githublink} target="_blank" className='hover:opacity-75 inline-flex items-center justify-center'>
+        <Link href={githublink} target="_blank" className='hover:opacity-75 inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-2' aria-label="GitHub">
           <FontAwesomeIcon icon={faGithub} className="text-xl lg:text-2xl" />
         </Link>
       )}
       {projectlink && (
-        <Link href={projectlink} target="_blank" className='hover:opacity-75 inline-flex items-center justify-center'>
+        <Link href={projectlink} target="_blank" className='hover:opacity-75 inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-2' aria-label="Live site">
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-lg lg:text-xl" />
         </Link>
       )}

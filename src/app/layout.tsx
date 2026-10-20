@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
 import Provider from "@/app/components/theme-provider";
-import { poppins, drukwidebold, ltunivers } from './fonts';
+import { poppins, drukwidebold } from './fonts';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
 
     return (
-      <div className={`${poppins.variable} ${ltunivers.variable} ${drukwidebold.variable} bg-background-100 dark:bg-background-950`}>
+      <div className={`${poppins.variable} ${drukwidebold.variable} bg-background-100 dark:bg-background-950`}>
         <Head>
           <title>BREXTONHO</title>
           <meta name='description' content='the future' />

@@ -22,7 +22,7 @@ const About: React.FC = () => {
             </p>
 
             <p className='text-lg lg:text-2xl mb-6'>
-              Feel free to connect with me on <a href="https://www.linkedin.com/in/brextonho/" rel="noopener noreferrer" target="_blank" className="underline hover:text-neutral-300">Linkedin</a> or <a href="mailto:jiajiinho@u.nus.edu" rel="noopener noreferrer" target="_blank" className="underline hover:text-neutral-300">email</a>
+              Feel free to connect with me on <a href="https://www.linkedin.com/in/brextonho/" rel="noopener noreferrer" target="_blank" className="underline hover:text-neutral-300">LinkedIn</a> or <a href="mailto:jiajiinho@u.nus.edu" rel="noopener noreferrer" target="_blank" className="underline hover:text-neutral-300">email</a>
             </p>
           </div>
         </div>

@@ -1,17 +1,17 @@
 import React from 'react';
 import { NavMenu } from '../app/components/NavBar';
 import ProjectCard from '../app/components/ProjectCard';
-import EconFoodPic from 'public/images/econfood.png'
-import LibappPic from 'public/images/books.png'
-import BacktestPic from 'public/images/backtest.png'
+import EconFoodPic from 'public/images/econfood-card.jpg'
+import LibappPic from 'public/images/books-card.jpg'
+import BacktestPic from 'public/images/backtest-card.jpg'
 
 
 const Projects: React.FC = () => {
   return (
-    <div className="flex flex-col h-screen mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-56">
+    <div className="flex flex-col min-h-screen pb-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-56">
       <NavMenu/>
       <h1 className="pt-10 pb-12 text-xl">Projects</h1>
-      <div className='group flex flex-col lg:flex-row list-none space-x-5'>
+      <div className='group flex flex-col items-center lg:flex-row lg:items-stretch list-none gap-5'>
         <ProjectCard
             imgSource={EconFoodPic}
             altTitle="econfood"
