@@ -16,9 +16,10 @@ interface CardProps {
 }
 
 const ProjectCard: React.FC<CardProps> = ({ imgSource, altTitle, title, description, tags, githublink, projectlink }) => (
-  <div className="max-w-sm bg-slate-100 rounded overflow-hidden shadow-lg">
+  <div className="max-w-sm mx-auto md:max-w-none md:mx-0 bg-slate-100 rounded overflow-hidden shadow-lg">
     <Image
       src={imgSource}
+      className="w-full h-auto aspect-video object-cover"
       // width={500}
       // height={500}
       // fill={true}

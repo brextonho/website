@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
     <div className="flex flex-col min-h-screen pb-10 mx-10 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40 2xl:mx-56">
       <NavMenu/>
       <h1 className="pt-10 pb-12 text-xl">Projects</h1>
-      <div className='group flex flex-col items-center lg:flex-row lg:items-stretch list-none gap-5'>
+      <div className='group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none gap-5'>
         <ProjectCard
             imgSource={EconFoodPic}
             altTitle="econfood"
