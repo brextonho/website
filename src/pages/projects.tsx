@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavMenu } from '../app/components/NavBar';
 import ProjectCard from '../app/components/ProjectCard';
+import AssetAllocPic from 'public/images/assetalloc.jpg'
 import EconFoodPic from 'public/images/econfood-card.jpg'
 import LibappPic from 'public/images/books-card.jpg'
 import BacktestPic from 'public/images/backtest-card.jpg'
@@ -13,6 +14,14 @@ const Projects: React.FC = () => {
       <h1 className="pt-10 pb-12 text-xl">Projects</h1>
       <div className='group grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none gap-5'>
         <ProjectCard
+            imgSource={AssetAllocPic}
+            altTitle="ibkr-port-analytics"
+            title="IBKR Portfolio Analytics"
+            description="Marketplace web app to tackle food waste problem by connecting food vendors and customers"
+            tags={['React','FastAPI','pandas','SQLite']}
+            githublink="https://github.com/brextonho/ibkr-port-analytics"
+        />
+        <ProjectCard
             imgSource={EconFoodPic}
             altTitle="econfood"
             title="Econfood"
@@ -23,10 +32,11 @@ const Projects: React.FC = () => {
         />
         <ProjectCard
             imgSource={BacktestPic}
-            altTitle="pythonbacktest"
-            title="Portfolio Backtesting"
+            altTitle="fixclient"
+            title="FIX Client"
             description="Class-based backtesting system to simplify testing and reporting of various strategies and indicators"
-            tags={['Python', 'pandas']}
+            githublink="https://github.com/brextonho/fix_client"
+            tags={['Python']}
         />
         <ProjectCard
             imgSource={LibappPic}

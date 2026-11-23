@@ -9,6 +9,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      white: '#ffffff',
       'neutral': {
         50: 'var(--text-50)',
         100: 'var(--text-100)',

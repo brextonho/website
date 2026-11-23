@@ -42,24 +42,12 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     </AccordionItem>
 );
 
-export const ExperienceAccordion: React.FC = () => (
-    <Accordion type="single" collapsible className="w-full">
-        <ExperienceItem
-        value="item-1"
-        title="Government of Singapore Investment Corporation (GIC)"
-        subtitle="Data Science"
-        date="Jan 2023 — Nov 2023"
-        details="PE Strats"
-        tools="Python, Plotly Dash, Bootstrap, Snowflake, SnowSQL, Tableau, Git"
-        />
+export type ExperienceEntry = Omit<ExperienceItemProps, "value">;
 
-        <ExperienceItem
-        value="item-2"
-        title="Shopee"
-        subtitle="Data Analytics"
-        date="May 2022 — Aug 2022"
-        details="Shopee Mall, Supermarket, Supply Chain"
-        tools="PrestoSQL, SparkSQL, Google Apps Script, Excel"
-        />
+export const ExperienceAccordion: React.FC<{ items: ExperienceEntry[] }> = ({ items }) => (
+    <Accordion type="single" collapsible className="w-full">
+        {items.map((item, i) => (
+            <ExperienceItem key={item.title} value={`item-${i}`} {...item} />
+        ))}
     </Accordion>
 );

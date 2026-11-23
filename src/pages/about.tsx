@@ -11,8 +11,7 @@ const About: React.FC = () => {
         <div className='col-span-4 md:col-span-3 whitespace-pre-wrap'>
           <div className='whitespace-pre-line'>
             <p className='text-lg lg:text-2xl mb-6'>
-                I am Brexton, a final year undergraduate at the National University of Singapore, 
-                majoring in Business Analytics
+                I am Brexton, a Business Analytics undergraduate at the National University of Singapore (NUS)
             </p>
 
             <p className='text-lg lg:text-2xl mb-6'>

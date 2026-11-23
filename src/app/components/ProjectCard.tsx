@@ -16,7 +16,7 @@ interface CardProps {
 }
 
 const ProjectCard: React.FC<CardProps> = ({ imgSource, altTitle, title, description, tags, githublink, projectlink }) => (
-  <div className="max-w-sm mx-auto md:max-w-none md:mx-0 bg-slate-100 rounded overflow-hidden shadow-lg">
+  <div className="max-w-sm mx-auto md:max-w-none md:mx-0 bg-white border border-neutral-300 rounded overflow-hidden shadow dark:bg-neutral-800 dark:border-0 dark:shadow-none">
     <Image
       src={imgSource}
       className="w-full h-auto aspect-video object-cover"
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<CardProps> = ({ imgSource, altTitle, title, descript
       {tags.map((tag, index) => (
         <span
           key={index}
-          className="inline-block rounded px-3 py-1 text-sm bg-neutral-100 dark:bg-neutral-200 hover:text-neutral-800 dark:text-neutral-800 dark:hover:text-neutral-600 font-bold mr-2 mb-2"
+          className="inline-block rounded px-3 py-1 text-sm bg-neutral-800 text-neutral-100 dark:bg-neutral-200 hover:text-neutral-300 dark:text-neutral-800 dark:hover:text-neutral-600 font-bold mr-2 mb-2"
         >
           {tag}
         </span>
